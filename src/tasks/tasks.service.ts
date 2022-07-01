@@ -16,6 +16,7 @@ export class TasksService {
 
     let tasks = this.getAllTasks();
 
+    // do something with status
     if (status) {
       tasks = tasks.filter((task) => task.status === status);
     }
@@ -48,7 +49,6 @@ export class TasksService {
     };
 
     this.tasks.push(task);
-
     return task;
   }
 
